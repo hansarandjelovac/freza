@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="podesavanja" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="polirka.PodesavanjaController">
+   <children>
+      <Label layoutX="431.0" layoutY="14.0" prefHeight="60.0" prefWidth="391.0" text="PODESAVANJA MASINE">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="98.0" layoutY="110.0" prefHeight="28.0" prefWidth="122.0" text="KALIBRACIJA" textFill="#ff0505">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="kalibrisiZosu" layoutX="191.0" layoutY="211.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="76.0" text="KALIBRISI" />
+      <Button fx:id="snimiPodesavanja" layoutX="1063.0" layoutY="596.0" mnemonicParsing="false" onAction="#snimiPodesavanja" prefHeight="69.0" prefWidth="133.0" text="SNIMI">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Button>
+      <Label layoutX="14.0" layoutY="298.0" prefHeight="25.0" prefWidth="183.0" text="Trenutni polozaj Z ose: ">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="zOsa" layoutX="182.0" layoutY="298.0" prefHeight="25.0" prefWidth="70.0" text="PROBLEM" textFill="#fc0000">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="60.0" fitWidth="46.0" layoutX="46.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ikone/dole.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="60.0" fitWidth="41.0" layoutX="118.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ikone/gore.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="893.0" layoutY="119.0" prefHeight="36.0" prefWidth="152.0" text="IZLAZAK TESTERE NAPRED" />
+      <Label layoutX="893.0" layoutY="176.0" prefHeight="36.0" prefWidth="152.0" text="IZLAZAK TESTERE NAZAD" />
+      <TextField layoutX="1094.0" layoutY="126.0" prefHeight="25.0" prefWidth="47.0" />
+      <TextField layoutX="1094.0" layoutY="182.0" prefHeight="25.0" prefWidth="47.0" />
+      <Label layoutX="893.0" layoutY="246.0" prefHeight="17.0" prefWidth="161.0" text="DEBLJINA POSLEDNJEG REZA" />
+      <TextField layoutX="1094.0" layoutY="243.0" prefHeight="25.0" prefWidth="47.0" />
+      <Label layoutX="1152.0" layoutY="130.0" text="CM" />
+      <Label layoutX="1152.0" layoutY="186.0" text="CM" />
+      <Label layoutX="1152.0" layoutY="247.0" text="CM" />
+      <Separator layoutX="7.0" layoutY="86.0" prefHeight="1.0" prefWidth="284.0" />
+      <Separator layoutX="7.0" layoutY="346.0" prefHeight="1.0" prefWidth="284.0" />
+      <Separator layoutX="287.0" layoutY="86.0" orientation="VERTICAL" prefHeight="262.0" prefWidth="7.0" />
+      <Separator layoutX="4.0" layoutY="86.0" orientation="VERTICAL" prefHeight="262.0" prefWidth="7.0" />
+      <Label layoutX="255.0" layoutY="298.0" text="CM">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="388.0" prefHeight="28.0" prefWidth="183.0" text="DEBLJINA TESTERE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField layoutX="64.0" layoutY="449.0" prefHeight="60.0" prefWidth="64.0" />
+      <Button layoutX="156.0" layoutY="461.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="70.0" text="OK" />
+      <Separator layoutX="5.0" layoutY="359.0" prefHeight="3.0" prefWidth="284.0" />
+      <Separator layoutX="6.0" layoutY="532.0" prefHeight="3.0" prefWidth="284.0" />
+      <Separator layoutX="284.0" layoutY="361.0" orientation="VERTICAL" prefHeight="173.0" prefWidth="7.0" />
+      <Separator layoutX="8.0" layoutY="360.0" orientation="VERTICAL" prefHeight="173.0" prefWidth="7.0" />
+   </children>
+</AnchorPane>
